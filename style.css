@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", "arial";
+}
+
+.header{
+    position: relative;
+    min-width: 1400px;
+    height: 800px;
+    overflow: hidden;
+    background-color: #E1FF8F;
+    z-index: 0;
+}
+
+.header__star2{
+    width: 57px;
+    height: 57px;
+    left: 63px;
+    margin-top: 94px;
+    position: absolute;
+}
+
+.header__star3{
+    position: absolute;
+    margin-top: 69px;
+    margin-left: 156px;
+}
+
+.header__background-img{
+    position: absolute;
+right: 0;
+z-index: -1;
+}
+
+.header__star5{
+    position: absolute;
+    margin-top: 538px;
+    margin-left: 948px;
+}
+
+.header__star4{
+    position: absolute;
+    margin-top: 568px;
+    margin-left: 1013px;
+}
+
+.header__content{
+    width: 769px;
+    height: 358px;
+    margin-left: 120px;
+    margin-top: 196px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__title{
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 24px;
+    color: #202027;
+    z-index: 1;
+}
+
+.header__description{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #202027;
+}
+
+.header__description-span{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.header__button-box{
+    display: flex;
+}
+.header__button{
+    font-family: inherit;
+    justify-content: center;
+    padding-top: 16px;
+    width: 247px;
+    height: 66px;
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: 600;
+    background-color: #202027;
+    border-radius: 60px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.header__button:hover{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color:#000000;
+    border: 1px solid #000;
+}
+
+.header__bottom{
+    min-width: 1400px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #BCEC30;
+    font-size: 30px;
+    color: #202027;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 156px;
+}
+
+.header__bottom-text{
+    margin-left: 49px;
+    margin-top: 27px;
+    margin-bottom: 30px;
+}
+.header__bottom-img{
+    margin-top: 27px;
+    margin-bottom: 30px;
+    margin-left: 51px;
+    z-index: 1;
+}
