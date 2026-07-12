@@ -184,6 +184,7 @@ z-index: -1;
  column-gap: 32px;
 }
 .games__card{
+    text-decoration:none;
     width: 378px;
     height: 473px;
     border-radius: 30px;
@@ -216,6 +217,7 @@ z-index: -1;
 }
 
 .games__card2{
+    text-decoration:none;
     width: 378px;
     height:512px;
     border-radius: 30px;
@@ -230,6 +232,7 @@ z-index: -1;
 }
 
 .games__card4{
+    text-decoration:none;
     width: 378px;
     height: 551px;
     border-radius: 30px;
@@ -251,6 +254,7 @@ z-index: -1;
 }   
 
 .games__card5{
+    text-decoration:none;
     width: 378px;
     height: 512px;
     border-radius: 30px;
@@ -259,6 +263,7 @@ z-index: -1;
 }
 
 .games__card6{
+    text-decoration:none;
     width: 378px;
     height: 551px;
     border-radius: 30px;
