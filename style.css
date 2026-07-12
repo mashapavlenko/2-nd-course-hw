@@ -49,6 +49,10 @@ z-index: -1;
     margin-left: 1013px;
 }
 
+.header__star-mobile{
+    display: none;
+}
+
 .header__content{
     width: 769px;
     height: 358px;
@@ -269,3 +273,31 @@ z-index: -1;
     border-radius: 30px;
     background-color: #FFFFFF;
 }
+/*
+.mini-games{
+    background-color: #202027;
+    min-width: 1440px;
+    height: 3500px;
+    position: relative;
+    padding-left: 119px;
+}
+
+.mini-games__title{
+    font-weight: 700;
+    font-size: 64px;
+    color:#FFFFFF;
+    padding-top: 46px;
+    margin-bottom: 72px;
+}
+
+.mini-games__star6{
+    position: absolute;
+    right: 45px;
+    top: 126px;
+}
+
+.mini-games__star7{
+    position: absolute;
+    right: 123px;
+    top: 93px;
+} */
