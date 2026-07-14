@@ -273,8 +273,10 @@ z-index: -1;
     border-radius: 30px;
     background-color: #FFFFFF;
 }
-/*
+
 .mini-games{
+    display: flex;
+    flex-direction: column;
     background-color: #202027;
     min-width: 1440px;
     height: 3500px;
@@ -300,4 +302,108 @@ z-index: -1;
     position: absolute;
     right: 123px;
     top: 93px;
-} */
+} 
+
+.mini-games__card{
+    display: flex;
+    width: 1200px;
+    height: 500px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.mini-games__card-text{
+    flex-direction: column;
+    width: 504px;
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-top: 48px;
+}
+
+.mini-games__card-title{
+    font-weight: 700;
+    font-style: bold;
+    font-size: 48px;
+    line-height: 100%;
+    color: #202027;
+    margin-bottom: 24px;
+}
+
+.mini-games__card-desc{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #202027;
+    margin-bottom: 36px;
+}
+
+.mini-games__button{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 24px;
+    background-color: #202027;
+    border-radius: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 75px;
+    padding-right: 75px;
+    display: inline-block;
+}
+
+.mini-games__button:hover{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color:#000000;
+    border: 1px solid #000;
+}
+
+.mini-games__images {
+    position: relative;
+}
+.mini-games__card4-img{
+    z-index: 1;
+    display: block;
+}
+
+.mini-games__card4-png{
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#FFC700;
+}   
+
+.footer{
+    background-color:#BDED35;
+    height: 150px;
+    min-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+    
+}
+
+.footer__star8{
+position: absolute;
+top: 5636px;
+right: 52px;
+width: 69px;
+height: 69px;
+}
+
+.footer__star10{
+position: absolute;
+width: 41px;
+height: 41px;
+right: 150px;
+top:5684px;
+}
+
