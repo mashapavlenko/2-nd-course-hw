@@ -2,7 +2,7 @@
 let password = 'пароль';
 let field = prompt("Введите пароль");
 
-if (password = 'пароль') {
+if (field === password) {
     alert('Пароль введен верно');
 } else {
     alert('Пароль введен неправильно');
