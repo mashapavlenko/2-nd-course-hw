@@ -279,7 +279,6 @@ z-index: -1;
     flex-direction: column;
     background-color: #202027;
     min-width: 1440px;
-    height: 3500px;
     position: relative;
     padding-left: 119px;
 }
@@ -354,7 +353,7 @@ z-index: -1;
     height: 500px;
     border-radius: 30px;
     background-color: #FFFFFF;
-    margin-bottom: 32px;
+    margin-bottom: 144px;
 }
 .mini-games__card-text{
     flex-direction: column;
@@ -428,10 +427,13 @@ z-index: -1;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 600;
-    font-size: 24px;
     color: #000000;
     
+}
+
+.footer__title{
+    font-weight: 600;
+    font-size: 24px;
 }
 
 .footer__star8{

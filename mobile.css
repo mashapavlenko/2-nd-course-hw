@@ -105,6 +105,7 @@
 
 .mini-games{
     min-width: 376px;
+    height: auto;
     padding-left: 16px;
 }
 
@@ -119,67 +120,46 @@
     display: none;
 }
 
-.mini-games__card{
-    display: flex;
-    flex-direction: column;
-    width: 343px;
-    height: 528px;
-    margin-bottom: 24px;
-    position: relative;
-}
-
-.mini-games__card2{
-    display: flex;
-    flex-direction: column;
-    width: 343px;
-    height: 567px;
-    margin-bottom: 24px;
-    position: relative;
-}
-
-.mini-games__card3{
-    display: flex;
-    flex-direction: column;
-    width: 343px;
-    height: 567px;
-    margin-bottom: 24px;
-    position: relative;
-}
-
-.mini-games__card4{
-    display: flex;
-    flex-direction: column;
-    width: 343px;
-    height: 606px;
-    margin-bottom: 24px;
-    position: relative;
-}
-
-.mini-games__card5{
-    display: flex;
-    flex-direction: column;
-    width: 343px;
-    height: 567px;
-    margin-bottom: 24px;
-    position: relative;
-}
-
+.mini-games__card,
+.mini-games__card2,
+.mini-games__card3,
+.mini-games__card4,
+.mini-games__card5,
 .mini-games__card6{
-    display: flex;
-    flex-direction: column;
-    width: 343px;
-    height: 626px;
+    display:flex;
+    flex-direction:column;
+    width:343px;
+    height: auto;
+    margin-bottom: 24px;
+    border-radius:30px;
+    overflow: hidden;
+}
+.mini-games__card6{
     margin-bottom: 10px;
-    position: relative;
 }
 
+
+.mini-games__card,
+.mini-games__card3,
+.mini-games__card5{
+
+    display:flex;
+    flex-direction:column;
+}
+
+.mini-games__card-img{
+    order:-1;
+}
+.mini-games__images{
+    position: relative;
+}
 .mini-games__card4-img{
-    
-    width: 343px;
-    height: 284px;
+    display: block;
+    width: 100%;
 }
 
 .mini-games__card4-png{
+    position: absolute;
     width: 90px;
     height: 90px;
     top: 50%;
@@ -189,23 +169,24 @@
 }
 
 .mini-games__card-img{
-    top:0;
-    position: absolute;
+    display: block;
     width: 343px;
-    height: 284px;
 }
+
 
 .mini-games__card-text{
     width: 285px;
     margin-left: 29px;
     margin-right: 29px;
-    margin-top: 314px;
-    position: absolute;
+    margin-top: 29px;
+    display: flex;
+    flex-direction: column;
 }
 
 .mini-games__card-title{
     font-size: 32px;
     margin-bottom: 16px;
+    line-height: 100%;
 }
 
 .mini-games__card-desc{
@@ -215,10 +196,10 @@
 }
 
 .mini-games__button{
-    display: block;
-    font-size: 16px;
-    padding-left: 110px;
-    padding-right: 110px;
+    display:block;
+    font-size:16px;
+    padding-left:110px;
+    padding-right:110px;
     margin-bottom: 32px;
 }
 
