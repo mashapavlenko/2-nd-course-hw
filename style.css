@@ -274,6 +274,24 @@ z-index: -1;
     background-color: #FFFFFF;
 }
 
+.games__card,
+.games__card2,
+.games__card4,
+.games__card5,
+.games__card6{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.games__card:hover,
+.games__card2:hover,
+.games__card4:hover,
+.games__card5:hover,
+.games__card6:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    z-index: 2;
+    position: relative;
+}
 .mini-games{
     display: flex;
     flex-direction: column;
