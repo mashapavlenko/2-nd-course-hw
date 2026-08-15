@@ -16,7 +16,7 @@
                correctAnswer: 2
            }
        ];
-
+function playTest(){
 let correct = 0;
 
 for (let i=0; i < quiz.length; i++){
@@ -27,3 +27,5 @@ for (let i=0; i < quiz.length; i++){
 }     
 
 alert('Кол-во правильных ответов: ' + correct);
+    
+}
