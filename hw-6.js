@@ -58,19 +58,16 @@ currentDate.setDate(currentDate.getDate()+73);
 console.log(currentDate);
 
 //Задание 10
-function returnDate(){
+function returnDate(myDate){
     const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг",
     "Пятница", "Суббота"];
 
     const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
     "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
-    let myDate = new Date();
-    let fullDate = "Дата:" + myDate.getDate() + "" + months[myDate.getMonth()] + " " + myDate.getFullYear() + " " + "это" + " " + days[myDate.getDay()];
+    let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()] + ". ";
 
-    let myTime = new Date();
-    let fullTime = "Время:" + myTime.getHours() + ":" + myTime.getMinutes() + ":" + myTime.getSeconds();
-    console.log(fullDate);
-    console.log(fullTime);
+    let fullTime = "Время: " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
+    return fullDate + fullTime;
 }
-returnDate();
+console.log(returnDate(new Date()));
