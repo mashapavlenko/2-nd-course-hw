@@ -81,3 +81,22 @@ function reverso(){
     alert (userQuestion);
 }
 
+//Игра «Камень, ножницы, бумага»
+function game() {
+    let userOption = prompt("Выберите: камень, ножницы или бумага");
+    const options = ["камень", "ножницы", "бумага"];
+    let action = Math.floor(Math.random() * 3);
+    
+
+    let computerOption = options[action];
+    console.log(userOption);
+    console.log(computerOption);
+        if (userOption === computerOption) {
+            alert('Ничья');
+        } else if ((userOption === "камень" && computerOption === "ножницы") || (userOption === "ножницы" && computerOption === "бумага") || (userOption === "бумага" && computerOption === "камень")){
+            alert ('Вы победили!');
+        } else {
+            alert ('Вы проиграли!');
+        }
+    }
+game();
