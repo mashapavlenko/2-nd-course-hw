@@ -99,4 +99,3 @@ function game() {
             alert ('Вы проиграли!');
         }
     }
-game();
