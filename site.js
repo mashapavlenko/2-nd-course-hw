@@ -87,6 +87,10 @@ function game() {
     const options = ["камень", "ножницы", "бумага"];
     let action = Math.floor(Math.random() * 3);
     
+    if (userOption === null || !options.includes(userOption)) {
+        alert("Некорректный ответ");
+        return;
+    }
 
     let computerOption = options[action];
     console.log(userOption);
