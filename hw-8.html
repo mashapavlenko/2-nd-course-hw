@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 class="heading">Заголовок</h1>
+   <button class="button">Скрыть</button>
+
+   <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, beatae?</p>
+   <button class="change-color">Изменить цвет</button>
+
+   <h2 class="newHeader">Lorem, ipsum dolor.</h2>
+   <button class="change-text">Изменить текст</button>
+
+   <p class="description">Lorem ipsum dolor sit.</p>
+   <p class="description">Lorem ipsum dolor sit.</p>
+   <p class="description">Lorem ipsum dolor sit.</p>
+   <p class="description">Lorem ipsum dolor sit.</p>
+
+   <p class="paragraph">Lorem ipsum dolor sit amet.</p>
+   <p class="newDescription">Lorem ipsum dolor sit amet.</p>
+   <p class="paragraph">Lorem ipsum dolor sit amet.</p>
+   <p class="newDescription">Lorem ipsum dolor sit amet.</p>
+   <p class="paragraph">Lorem ipsum dolor sit amet.</p>
+
+   
+   <button class="btn-add">Добавить элемент</button>
+
+    <p class="another-description">Lorem ipsum dolor sit amet.</p>
+    <p class="another-paragraph">Lorem ipsum dolor sit amet.</p>
+    <p class="another-description">Lorem ipsum dolor sit amet.</p>
+    <p class="another-paragraph">Lorem ipsum dolor sit amet.</p>
+   <script>
+    //Задание 1 
+    const headingEl = document.querySelector('.heading');
+    const buttonEl = document.querySelector('.button');
+
+    buttonEl.addEventListener('click', () =>{
+        const headingEl = document.querySelector('.heading');
+
+        if (headingEl.style.display === 'none') {
+        headingEl.style.display = 'block';
+        } else {
+        headingEl.style.display = 'none';
+        }
+    });
+
+    //Задание 2
+    const textEl = document.querySelector('.text');
+    const changeColor = document.querySelector('.change-color');
+
+    changeColor.addEventListener('click', function (e) {
+        const textEl = document.querySelector('.text');
+        textEl.style.color = 'blue';
+    });
+
+    //Задание 3
+    const newHeaderEl = document.querySelector('.newHeader');
+    const changeText = document.querySelector('.change-text');
+
+    changeText.addEventListener('click', () =>{
+        const newHeaderEl = document.querySelector('.newHeader');
+        newHeaderEl.textContent = "Привет, мир!";
+    });
+
+    //Задание 4
+    const descriptionEl = document.querySelectorAll('.description');
+
+    descriptionEl.forEach(description => {
+        description.textContent = 'Измененный текст';
+    });
+    
+    //Задание 5
+    const paragraphEl = document.querySelector('.paragraph');
+    const newDescriptionEl = document.querySelectorAll('.newDescription');
+
+    newDescriptionEl.forEach(newDescription => {
+        newDescription.textContent = "Новый текст";
+    });
+
+    //Задание 6
+    const btnAdd = document.querySelector('.btn-add');
+
+    btnAdd.addEventListener('click', function (e) {
+        const newEl = document.createElement('p');
+        newEl.textContent = 'Новый абзац';
+        document.body.appendChild(newEl);
+    });
+
+    //Задание 7
+    const anotherDescription = document.querySelector('.another-description');
+    const anotherParagraph = document.querySelector('.another-paragraph');
+
+    const newButton = document.createElement('button');
+    newButton.textContent = 'Удалить элемент';
+    document.body.appendChild(newButton);
+    
+    newButton.addEventListener('click', function (e) {
+        anotherDescription.remove();
+    });
+
+   </script>
+</body>
+</html>
