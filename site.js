@@ -29,3 +29,77 @@ for (let i=0; i < quiz.length; i++){
 alert('Кол-во правильных ответов: ' + correct);
     
 }
+// Игра "Угадай число"
+function guessNum(){
+    let num = Math.floor(Math.random() * 100) + 1;
+    let question;
+    while (question != num) {
+        question = Number(prompt('Угадайте число от 1 до 100'));
+        if (question === num){
+            alert('Угадал!');
+        } else if (question < num){
+            alert('Загаданное число больше');
+        } else {
+            alert('Загаданное число меньше');
+        }
+    }
+}
+// Игра "Простая арифметика"
+function arithmetic(){
+    let a = Math.floor(Math.random() * 20) +1;
+    let b = Math.floor(Math.random() * 20) +1;
+
+    let operation = Math.floor(Math.random() * 4) + 1; 
+    let correctResponse;
+    let userAnswer;
+    if (operation === 1) {
+        correctResponse = a + b;
+        userAnswer = Number(prompt(a + '+' + b));
+    } else if (operation ===2){
+        correctResponse = a - b;
+        userAnswer = Number(prompt(a + '-' + b));
+    }else if(operation === 3){
+        correctResponse = a * b;
+        userAnswer = Number(prompt(a + '*' + b));
+    }else{
+        correctResponse = a / b;
+        userAnswer = Number(prompt(a + '/' + b));
+    }
+    
+    if (userAnswer === correctResponse){
+        alert('Верно!');
+    }else{
+        alert('Ошибка!');
+    }
+}
+
+// Игра "Переверни текст"
+function reverso(){
+    let userQuestion = prompt("Введите текст");
+    userQuestion = userQuestion.split('').reverse().join('');
+
+    alert (userQuestion);
+}
+
+//Игра «Камень, ножницы, бумага»
+function game() {
+    let userOption = prompt("Выберите: камень, ножницы или бумага");
+    const options = ["камень", "ножницы", "бумага"];
+    let action = Math.floor(Math.random() * 3);
+    
+    if (userOption === null || !options.includes(userOption)) {
+        alert("Некорректный ответ");
+        return;
+    }
+
+    let computerOption = options[action];
+    console.log(userOption);
+    console.log(computerOption);
+        if (userOption === computerOption) {
+            alert('Ничья');
+        } else if ((userOption === "камень" && computerOption === "ножницы") || (userOption === "ножницы" && computerOption === "бумага") || (userOption === "бумага" && computerOption === "камень")){
+            alert ('Вы победили!');
+        } else {
+            alert ('Вы проиграли!');
+        }
+    }
