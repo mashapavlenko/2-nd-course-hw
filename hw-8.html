@@ -35,7 +35,6 @@
     <p class="another-paragraph">Lorem ipsum dolor sit amet.</p>
    <script>
     //Задание 1 
-    const headingEl = document.querySelector('.heading');
     const buttonEl = document.querySelector('.button');
 
     buttonEl.addEventListener('click', () =>{
@@ -49,7 +48,6 @@
     });
 
     //Задание 2
-    const textEl = document.querySelector('.text');
     const changeColor = document.querySelector('.change-color');
 
     changeColor.addEventListener('click', function (e) {
@@ -58,7 +56,6 @@
     });
 
     //Задание 3
-    const newHeaderEl = document.querySelector('.newHeader');
     const changeText = document.querySelector('.change-text');
 
     changeText.addEventListener('click', () =>{
@@ -74,7 +71,6 @@
     });
     
     //Задание 5
-    const paragraphEl = document.querySelector('.paragraph');
     const newDescriptionEl = document.querySelectorAll('.newDescription');
 
     newDescriptionEl.forEach(newDescription => {
@@ -97,7 +93,7 @@
     const newButton = document.createElement('button');
     newButton.textContent = 'Удалить элемент';
     document.body.appendChild(newButton);
-    
+
     newButton.addEventListener('click', function (e) {
         anotherDescription.remove();
     });
