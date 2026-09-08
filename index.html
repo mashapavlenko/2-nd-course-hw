@@ -24,22 +24,25 @@
             <h3 class="header__description">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span class="header__description-span">«Поехали!»</span> и <span class="header__description-span">приступай.</span></h3>
         </div>
         <div class="header__button-box">
-            <a href="#games" class="header__button">Поехали!</a>
+            <a href="#games" class="header__button header__button-desktop">Поехали!</a>
+            <a href="#mini-games" class="header__button header__button-mobile">Поехали!</a>
         </div>
         </section>
         <div class="header__bottom">
-            <p class="header__bottom-text">Викторина</p>
-            <img src="./img/Star.svg" alt="Star" class="header__bottom-img">
-            <p class="header__bottom-text">угадай число</p>
-            <img src="./img/Star.svg" alt="Star" class="header__bottom-img">
-            <p class="header__bottom-text">Переверни текст</p>
-            <img src="./img/Star.svg" alt="Star" class="header__bottom-img">
-            <p class="header__bottom-text">Простая арифметика</p>
-            <img src="./img/Star.svg" alt="Star" class="header__bottom-img">
-            <p class="header__bottom-text">Камень, ножницы, бумага</p>
-            <img src="./img/Star.svg" alt="Star" class="header__bottom-img">
-            <p class="header__bottom-text">Генератор случайных цветов</p>
-            <img src="./img/Star.svg" alt="Star" class="header__bottom-img">
+            <div class="header__bottom-line">
+                <p class="header__bottom-text">Викторина</p>
+                <img src="./img/Star.svg" alt="Star" class="header__bottom-img">
+                <p class="header__bottom-text">угадай число</p>
+                <img src="./img/Star.svg" alt="Star" class="header__bottom-img">
+                <p class="header__bottom-text">Переверни текст</p>
+                <img src="./img/Star.svg" alt="Star" class="header__bottom-img">
+                <p class="header__bottom-text">Простая арифметика</p>
+                <img src="./img/Star.svg" alt="Star" class="header__bottom-img">
+                <p class="header__bottom-text">Камень, ножницы, бумага</p>
+                <img src="./img/Star.svg" alt="Star" class="header__bottom-img">
+                <p class="header__bottom-text">Генератор случайных цветов</p>
+                <img src="./img/Star.svg" alt="Star" class="header__bottom-img">
+            </div>
         </div>
     </header>
     <section class="games" id="games">
@@ -87,7 +90,7 @@
     </section>
 </section>
 
-<section class="mini-games">
+<section class="mini-games" id="mini-games">
     <h2 class="mini-games__title">Мини-игры</h2>
     <img src="./img/Star-6.svg" alt="star" class="mini-games__star6">
     <img src="./img/Star-7.svg" alt="star" class="mini-games__star7">
@@ -133,7 +136,7 @@
 
     <article id="game5" class="mini-games__card5">
         <div class="mini-games__card-text">
-            <h3 class="mini-games__card-title">Простая <br>викторина</h3>
+            <h3 class="mini-games__card-title">Простая <br> викторина</h3>
             <h4 class="mini-games__card-desc">Отвечай на вопросы викторины <br>с вариантами ответов.</h4>
             <a href="#" class="mini-games__button" onclick="playTest()">Играть!</a>
         </div>
@@ -145,7 +148,7 @@
         <div class="mini-games__card-text">
             <h3 class="mini-games__card-title">Генератор <br>случайных <br>цветов</h3>
             <h4 class="mini-games__card-desc">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</h4>
-            <a href="#" class="mini-games__button">Играть!</a>
+            <a href="#game6" class="mini-games__button colorRandom-button">Играть!</a>
         </div>
     </article>
 </section>

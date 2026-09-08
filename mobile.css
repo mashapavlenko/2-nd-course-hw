@@ -7,7 +7,13 @@
     min-width: 376px;
     height: 700px;
 }
+.header__button-desktop{
+    display: none;
+}
 
+.header__button-mobile{
+    display: block;
+}
 .header__content{
     justify-content: center;
     width: 346px;
@@ -186,7 +192,7 @@
 .mini-games__card-title{
     font-size: 32px;
     margin-bottom: 16px;
-    line-height: 59px;
+    
 }
 
 .mini-games__card-desc{

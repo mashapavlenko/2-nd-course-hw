@@ -81,7 +81,9 @@ z-index: -1;
     font-weight: 600;
     font-size: 24px;
 }
-
+.header__button-mobile{
+    display: none;
+}
 .header__button-box{
     display: flex;
 }
@@ -110,7 +112,7 @@ z-index: -1;
 }
 
 .header__bottom{
-    min-width: 1440px;
+    width: 100%;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -122,7 +124,21 @@ z-index: -1;
     text-transform: uppercase;
     margin-top: 156px;
 }
+.header__bottom-line {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: scroll-left 10s linear infinite;
+}
 
+@keyframes scroll-left{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
 .header__bottom-text{
     margin-left: 49px;
     margin-top: 27px;
