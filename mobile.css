@@ -108,8 +108,7 @@
 
 .mini-games{
     min-width: 376px;
-    height: auto;
-    padding-left: 16px;
+    padding: 16px 48px 16px 48px;
 }
 
 .mini-games__title{
@@ -131,8 +130,7 @@
 .mini-games__card6{
     display:flex;
     flex-direction:column;
-    width:343px;
-    height: auto;
+    max-width:1200px;
     margin-bottom: 24px;
     border-radius:30px;
     overflow: hidden;
@@ -145,7 +143,6 @@
 .mini-games__card,
 .mini-games__card3,
 .mini-games__card5{
-
     display:flex;
     flex-direction:column;
 }
@@ -173,15 +170,11 @@
 
 .mini-games__card-img{
     display: block;
-    width: 343px;
+    max-width: 343px;
 }
 
 
 .mini-games__card-text{
-    width: 285px;
-    margin-left: 29px;
-    margin-right: 29px;
-    margin-top: 29px;
     display: flex;
     flex-direction: column;
 }
@@ -189,7 +182,6 @@
 .mini-games__card-title{
     font-size: 32px;
     margin-bottom: 16px;
-    
 }
 
 .mini-games__card-desc{
@@ -201,9 +193,7 @@
 .mini-games__button{
     display:block;
     font-size:16px;
-    padding-left:110px;
-    padding-right:110px;
-    margin-bottom: 32px;
+    text-align: center;
 }
 
 
