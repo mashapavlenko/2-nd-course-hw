@@ -40,6 +40,7 @@ right: 0;
 z-index: -1;
 }
 
+/*звездочки съезжают */
 .header__star5{
     position: absolute;
     top: 538px;
@@ -147,6 +148,7 @@ z-index: -1;
     z-index: 1;
 }
 
+/*на 1440px выглядит не так как в макете */
 .games{
     background-color: #202027;
     width: 100%;
@@ -302,6 +304,8 @@ z-index: -1;
     z-index: 2;
     position: relative;
 }
+
+/*ширина карточек */
 .mini-games{
     display: flex;
     flex-direction: column;
@@ -439,7 +443,7 @@ z-index: -1;
 
 .footer{
     background-color:#BDED35;
-    height: 150px;
+    text-align: center;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -448,7 +452,9 @@ z-index: -1;
     position: relative;
 }
 
+/* позиция футера? */
 .footer__title{
+    padding: 61px 578px 60px 578px;
     font-weight: 600;
     font-size: 24px;
 }
@@ -461,10 +467,12 @@ width: 69px;
 height: 69px;
 }
 
+/* не видна звездочка*/
 .footer__star10{
 position: absolute;
 width: 41px;
 height: 41px;
 right: 150px;
+bottom: 45px;
 }
 
