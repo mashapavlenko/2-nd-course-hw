@@ -8,10 +8,12 @@ body {
   font-family: "Montserrat", "arial";
 }
 
+.center{
+    padding-left:calc(50% - 720px);
+    padding-right:calc(50% - 720px);
+}
 .header{
     position: relative;
-    min-width: 1440px;
-    height: 800px;
     overflow: hidden;
     background-color: #E1FF8F;
     z-index: 0;
@@ -21,14 +23,14 @@ body {
     width: 57px;
     height: 57px;
     left: 63px;
-    margin-top: 94px;
+    top: 94px;
     position: absolute;
 }
 
 .header__star3{
     position: absolute;
-    margin-top: 69px;
-    margin-left: 156px;
+    top: 69px;
+    left: 156px;
 }
 
 .header__background-img{
@@ -39,14 +41,14 @@ z-index: -1;
 
 .header__star5{
     position: absolute;
-    margin-top: 538px;
-    margin-left: 948px;
+    bottom: 135px;
+    right: 455px;
 }
 
 .header__star4{
     position: absolute;
-    margin-top: 568px;
-    margin-left: 1013px;
+    bottom: 59px;
+    right: 344px;
 }
 
 .header__star-mobile{
@@ -54,14 +56,15 @@ z-index: -1;
 }
 
 .header__content{
-    width: 769px;
-    height: 358px;
-    margin-left: 120px;
-    margin-top: 196px;
+    padding-left: 120px;
+    padding-top: 196px;
+    padding-bottom: 156px;
     display: flex;
     flex-direction: column;
 }
-
+.header__text{
+    margin: 0 0 48px 0;
+}
 .header__title{
     font-weight: 700;
     font-size: 64px;
@@ -81,16 +84,13 @@ z-index: -1;
     font-weight: 600;
     font-size: 24px;
 }
-
-.header__button-box{
-    display: flex;
-}
+.header__button.header__button-mobile{ display: none; }
+.header__button.header__button-desktop{ display: inline-block; }
 .header__button{
     font-family: inherit;
     justify-content: center;
-    padding-top: 16px;
-    width: 247px;
-    height: 66px;
+    display: inline-block;
+    padding: 16px 65px 16px 65px;
     font-size: 24px;
     color: #FFFFFF;
     font-weight: 600;
@@ -99,7 +99,6 @@ z-index: -1;
     border: none;
     text-decoration: none;
     text-align: center;
-    margin-top: 48px;
 }
 
 .header__button:hover{
@@ -110,7 +109,6 @@ z-index: -1;
 }
 
 .header__bottom{
-    min-width: 1440px;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -120,9 +118,22 @@ z-index: -1;
     color: #202027;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 156px;
+}
+.header__bottom-line {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: scroll-left 10s linear infinite;
 }
 
+@keyframes scroll-left{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
 .header__bottom-text{
     margin-left: 49px;
     margin-top: 27px;
@@ -137,30 +148,30 @@ z-index: -1;
 
 .games{
     background-color: #202027;
-    min-width: 1440px;
-    height: 1470px;
+    width: 100%;
     position: relative;
-    margin-top: 0;
+    padding-top: 94px;
+    padding-bottom: 50px;
 }
 
 .games__text{
-    width: 788px;
-    height: 96px;
     color: #FFFFFF;
-    margin-left: 119px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .games__title{
     font-weight: 700;
     font-size: 64px;
-    padding-top: 94px;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 .games__description{
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
+    margin-bottom: 72px;
 }
 
 .games__star1{
@@ -169,30 +180,32 @@ z-index: -1;
 }
 
 .games__star11{
-    margin-left: 25px;
-    margin-top: 676px;
+    left: 25px;
+    top: 676px;
     position: absolute;
 }
 
 .games__star12{
     position: absolute;
-    margin-top: 728px;
-    margin-left: 40px;
+    top: 728px;
+    left: 40px;
 }
 
 .games__card-container{
- margin-top: 270px;
- margin-left: 119px;
  display: flex;
  row-gap: 32px;
  column-gap: 32px;
+ flex-wrap: wrap;
+ width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.games__card-img{
+    width: 100%;
 }
 .games__card{
-    text-decoration:none;
-    width: 378px;
     height: 473px;
-    border-radius: 30px;
-    background-color: #FFFFFF;
     z-index: 1;
 }
 
@@ -215,63 +228,33 @@ z-index: -1;
     font-weight: 700;
     font-size: 32px;
     color: #202027;
-    margin-left: 32px;
-    margin-top: 16px;
-    margin-bottom: 36px;
+    padding: 16px 32px 36px 32px;
 }
 
 .games__card2{
-    text-decoration:none;
-    width: 378px;
     height:512px;
-    border-radius: 30px;
-    background-color: #FFFFFF;
 }
 
 .games__card-second-container{
-    margin-left: 119px;
  display: flex;
  row-gap: 32px;
  column-gap: 32px;
+ flex-wrap: wrap;
+ width: 100%;
+ max-width: 1200px;
+ margin: 0 auto;
 }
-
 .games__card4{
-    text-decoration:none;
-    width: 378px;
     height: 551px;
-    border-radius: 30px;
-    background-color: #FFFFFF;
-    position: relative;
 }
-
-.games__card4-img{
-    z-index: 1;
-    display: block;
-}
-
-.games__card4-png{
-    z-index: 2;
-    position: absolute;
-    top: 108px;
-    left: 141px;
-    background-color:#FFC700;
-}   
 
 .games__card5{
-    text-decoration:none;
-    width: 378px;
     height: 512px;
-    border-radius: 30px;
-    background-color: #FFFFFF;
     margin-top: 32px;
 }
 
 .games__card6{
-    text-decoration:none;
-    width: 378px;
     height: 551px;
-    border-radius: 30px;
-    background-color: #FFFFFF;
 }
 
 .games__card,
@@ -279,6 +262,14 @@ z-index: -1;
 .games__card4,
 .games__card5,
 .games__card6{
+    text-decoration:none;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    max-width: 378px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width:calc((100% - 64px) / 3 );
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -292,21 +283,25 @@ z-index: -1;
     z-index: 2;
     position: relative;
 }
+
 .mini-games{
     display: flex;
     flex-direction: column;
     background-color: #202027;
-    min-width: 1440px;
+    width: 100%;
     position: relative;
-    padding-left: 119px;
+    align-items: center;
+    padding-top: 46px;
+    padding-bottom: 144px;
 }
 
 .mini-games__title{
     font-weight: 700;
     font-size: 64px;
     color:#FFFFFF;
-    padding-top: 46px;
-    margin-bottom: 72px;
+    width: 100%;
+    margin: 0 auto 72px;
+    max-width: 1200px;
 }
 
 .mini-games__star6{
@@ -321,66 +316,29 @@ z-index: -1;
     top: 93px;
 } 
 
-.mini-games__card{
-    display: flex;
-    width: 1200px;
-    height: 500px;
-    border-radius: 30px;
-    background-color: #FFFFFF;
-    margin-bottom: 32px;
-}
-
-.mini-games__card2{
-    display: flex;
-    width: 1200px;
-    height: 500px;
-    border-radius: 30px;
-    background-color: #FFFFFF;
-    margin-bottom: 32px;
-}
-
-.mini-games__card3{
-    display: flex;
-    width: 1200px;
-    height: 500px;
-    border-radius: 30px;
-    background-color: #FFFFFF;
-    margin-bottom: 32px;
-}
-
-.mini-games__card4{
-    display: flex;
-    width: 1200px;
-    height: 500px;
-    border-radius: 30px;
-    background-color: #FFFFFF;
-    margin-bottom: 32px;
-}
-
-.mini-games__card5{
-    display: flex;
-    width: 1200px;
-    height: 500px;
-    border-radius: 30px;
-    background-color: #FFFFFF;
-    margin-bottom: 32px;
-}
+.mini-games__card,
+.mini-games__card2,
+.mini-games__card3,
+.mini-games__card4,
+.mini-games__card5,
 .mini-games__card6{
+    max-width: 1200px;
+    width:100%;
     display: flex;
-    width: 1200px;
-    height: 500px;
     border-radius: 30px;
     background-color: #FFFFFF;
-    margin-bottom: 144px;
+    margin-bottom: 32px;
 }
 .mini-games__card-text{
     flex-direction: column;
-    width: 504px;
-    margin-left: 48px;
-    margin-right: 48px;
-    margin-top: 48px;
+    padding: 48px;
+    width: 50%;
 }
-
+.mini-games__card-img{
+    object-fit: cover;
+    border-radius: 0px 12px 12px 0px;
+    width: 50%;
+}
 .mini-games__card-title{
     font-weight: 700;
     font-style: bold;
@@ -419,44 +377,26 @@ z-index: -1;
     border: 1px solid #000;
 }
 
-.mini-games__images {
-    position: relative;
-}
-.mini-games__card4-img{
-    z-index: 1;
-    display: block;
-}
-
-.mini-games__card4-png{
-    width: 150px;
-    height: 150px;
-    z-index: 2;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color:#FFC700;
-}   
-
 .footer{
     background-color:#BDED35;
-    height: 150px;
-    min-width: 1440px;
+    text-align: center;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #000000;
-    
+    position: relative;
 }
 
 .footer__title{
+    padding: 60px;
     font-weight: 600;
     font-size: 24px;
 }
 
 .footer__star8{
 position: absolute;
-top: 5636px;
+bottom:65px;
 right: 52px;
 width: 69px;
 height: 69px;
@@ -467,6 +407,6 @@ position: absolute;
 width: 41px;
 height: 41px;
 right: 150px;
-top:5684px;
+bottom: 45px;
 }
 

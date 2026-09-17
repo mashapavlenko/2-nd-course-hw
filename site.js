@@ -103,3 +103,16 @@ function game() {
             alert ('Вы проиграли!');
         }
     }
+
+      //Игра "Генератор случайных цветов"
+        const miniGamesElement = document.querySelector('.mini-games');
+        const buttonElement = document.querySelector('.colorRandom-button');
+        buttonElement.addEventListener('click', () =>{
+        let symbols = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+        let color = '#';
+        for (let i = 0; i < 6; i ++){
+        let randomSymbol = Math.floor(Math.random() * symbols.length);
+        color += symbols[randomSymbol];
+        }
+        miniGamesElement.style.backgroundColor = color;
+        });
